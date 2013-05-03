@@ -1,0 +1,10 @@
+.box {
+	border: 1px solid #dadada;
+}
+.span4.sidebar {
+	border-left: 1px solid #dadada;
+	width: 297px;
+}
+div.ribbon {
+	margin-left: -57px;
+}

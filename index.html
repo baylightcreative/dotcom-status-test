@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)http://twitter.github.com/bootstrap/components.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<title>EHR System Status | Practice Fusion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="robots" content="noindex,nofollow">
+
+    <link href="templates/practice_fusion/images/favicon.ico" rel="shortcut icon">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <!--[if IE 8]>
+      <link rel="stylesheet" type="text/css" href="css/ie8.css">
+    <![endif]-->
+    <!--[if IE 7]>
+      <link rel="stylesheet" type="text/css" href="css/ie7.css">
+    <![endif]-->
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/webfont/1/webfont.js"></script>
+    <script type="text/javascript">
+    WebFont.load({
+
+    ascender: {
+      key: '0d7aecc8-56c3-49f5-9f72-d7a23e578a90',
+      families: ['Calibri:bold,bolditalic,italic,regular']
+    }
+    });
+    </script>
+
+    <link rel="shortcut icon" href="ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+
+    <!-- Start GA code -->
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1110669-6']);
+    /*visual website optimizer*/if(typeof(_vis_opt_GA_track) == "function") { _vis_opt_GA_track(); }
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
+    <!-- End GA code -->
+  </head>
+
+  <body data-spy="scroll" data-target=".subnav" data-offset="50" data-twttr-rendered="true">
+
+  <!-- Navbar
+    ================================================== -->
+    
+    <div class="navbar navbar-main-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="http://www.practicefusion.com">Practice Fusion</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="">
+                <a class="loginCTA" href="javascript:openwin();"><i class="icon-lock"></i>Login</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+<!-- System Status Area Begins
+================================================== -->
+<section id="system-status">
+  <div class="row box">
+    <div class="span8">
+      <div class="row header">
+        <ul id="ehr-status">
+          <li class="h1"><h1>EHR Status</h1></li>
+	        <li class="LED"><div id="led_color" class="light"></div></li>
+          <li class="ehr-status"></li>
+        </ul>
+      </div><!-- row -->
+	      <div id="alert_row"><!-- populate alerts with jquery --></div>
+        <div class="update-header">
+	         <h2>Updates from Practice Fusion</h2><div class="rss"><a href="status/status/rss" target="_blank" class="subscribe">subscribe via rss</a></div>
+        </div>
+        <div class="clear"></div>
+        <!-- maintenance messages start -->
+                <!-- maintenance messages end -->
+	       <!-- latest updates start -->
+         <ul class='updates'>
+         </ul>
+         <!-- latest updates end -->
+	</div><!-- span -->
+	    <div class="span4 sidebar">
+      <div class="sidebar-inner">
+        <div class="ribbon"></div>
+        <h3 id="troubleshoot"><strong>How to:</strong> Troubleshoot</h3>
+        <ol>
+          <li>Identify if the issue is local to your office internet using <a href="http://www.speedtest.net" target="_blank">www.speedtest.net</a></li>
+          <li>Try using a different internet browser like <a href="http://www.google.com/chrome" target="_blank">Chrome</a> or <a href="http://www.mozilla.org" target="_blank">Firefox</a> </l1>
+          <li>Update your browser and <a href="http://www.practicefusion.com/emr-forum/browsers-and-hardware/how-to-update-your-flash-player/A.EHR/5131" title="Learn how to update Adobe Flash" target="_blank">Adobe Flash</a></li>
+          <li><a href="http://www.practicefusion.com/emr-forum/browsers-and-hardware/how-to-clear-browser-cache-and-temporary-files/A.EHR/4342" title="Learn how to clear your browser's cache" target="_blank">Clear your browser cache</a></li>
+        </ol>
+        <h3><strong>How to:</strong> Prepare to work offline</h3>
+        <ol>
+          <li>Print the next day's schedule</li>
+          <li>Complete pending Rx refill requests the day before</l1>
+          <li>Have a plan to document your patient visits</li>
+          <li>Plan alternatives for accessing labs and prescriptions</li>
+        </ol>
+        <h3><strong>How to:</strong> Avoid local disruptions</h3>
+        <ol>
+          <li>Have a prepaid wireless 3G hub or other back-up internet</li>
+          <li>Use surge protectors and laptops with good batteries</l1>
+          <li>Identify a second location where you can access internet</li>
+        </ol>
+        <h3>Still experiencing problems?</h3>
+        Get expert answers to your questions at <a href="http://www.practicefusion.com/emr-forum/EMR-community-forum-for-healthcare-professionals" target="_blank">Practice Fusion Answers &raquo;</a>
+        <!-- <div class="sidebar-makeup"></div> -->
+      </div>
+    </div>
+  </div>
+  </div><!-- /row -->
+</section>
+
+
+
+
+<!-- alert model -->
+<div class="modal" id="myModal" style="visibility: hidden;">
+<div class="modal-header">
+<button class="close" data-dismiss="modal">×</button>
+<h3>Alert</h3>
+</div>
+<div class="modal-body">
+<p>The EHR is temporarily offline - please check the status page for updates.</p>
+</div>
+<div class="modal-footer">
+<a href="#" class="btn" data-dismiss="modal">check status page</a>
+</div>
+</div>
+<!-- end alert modal -->
+
+
+<!-- Footer
+================================================== -->
+
+    </div><!-- /container -->
+
+    
+		<script type="text/javascript">
+    function openwin()
+    {
+      var a=window.open("http://www.practicefusion.com/apps/status/check.php","PF_EMR","status=0, toolbar=0, location=0, menubar=0, directories=0, resizable=1, scrollbars=1")
+    };
+    </script>
+		<script type="text/javascript">function openwin2(){var a=window.open("http://www.practicefusion.com/apps/status/check.php?signup=true","PF_EMR2","status=0, toolbar=0, location=0, menubar=0, directories=0, resizable=1, scrollbars=1")};</script>
+		
+		<script type="text/javascript">function openwinTour(){var a=window.open("http://www.practicefusion.com/apps/status/check.php?signup=tour","PF_EMR3","status=0, toolbar=0, location=0, menubar=0, directories=0, resizable=1, scrollbars=1")};</script>
+		
+		<script type="text/javascript">function openwinRead(){var a=window.open("http://www.practicefusion.com/apps/status/check.php?signup=whitepaper","PF_EMR4","status=0, toolbar=0, location=0, menubar=0, directories=0, resizable=1, scrollbars=1")};</script>
+		<script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script src="js/swfobject.js"></script>
+
+    <!--- Get Status Feed -->
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $.support.cors = true;
+
+        $.getJSON("http://pfhq.practicefusion.com:1020/api/index.php/ehr_status/ajax_status/", {
+          format: "json"
+        })
+        .done( function(data) {
+
+            $.each(data.status.feeds, function(key, val) {
+              var item = '<li class="status-update"><div class="expandable"><p>' + val.message + '</p></div><p class="datetime">' + val.datetime + ' (PST)</p></li>';
+              $(".updates").append(item);
+            });
+
+            var status_info_id = data.status.status_message.status_info_id;
+
+            switch(status_info_id)
+            {
+              // EHR is Perfect Green
+              case '1':
+              default:
+                $("#led_color").addClass("greenlight");
+                break;
+              
+              // EHR Slow Yellow
+              case '2':
+                $("#led_color").addClass("yellowlight");
+                break;
+
+              // EHR Down Red
+              case '3':
+                $("#led_color").addClass("redlight");
+                break;
+
+              // EHR Planned Outage Orange
+              case '4':
+                $("#led_color").addClass("orangelight");
+                break;
+            }
+            
+            var ehr_status = data.status.status_message.message + '<small> &mdash; ' + data.status.status_message.datetime + ' (PST) </small>';
+
+            $(".ehr-status").append(ehr_status);
+
+            var uptime = data.status.status_message.uptime_percentage + ' uptime <small>in the last ' + data.status.status_message.uptime_period + '</small>';
+
+            $(".ribbon").append(uptime);
+        })
+        .fail(function(jqXHR, textStatus, errorThrown){
+          $(".updates").append('Currently we are having some technical difficulties, please try again after some time. <br /><br />Thank you for your patience.');
+        });
+      });
+    </script>
+    <!-- End of Status Feed --> 
+
+    <!-- jQuery Expander -->
+    <script type="text/javascript" src="js/jquery.expander.js"></script>
+    <script type="text/javascript">
+    // you can override default options globally, so they apply to every .expander() call
+    $.expander.defaults.slicePoint = 250;
+
+    $(document).ready(function() {
+
+      // detect flash - requires swfobject.js
+      if(!swfobject.hasFlashPlayerVersion("11"))
+      {
+        // append alert box to #alert_row
+        $('#alert_row').append('<div class="alert fade in"><button class="close" data-dismiss="alert">×</button>We\'ve detected that you need the latest version of Adobe Flash.  &nbsp;<a href="http://www.practicefusion.com/emr-forum/browsers-and-hardware/how-to-update-your-flash-player/A.EHR/5131" target="_blank" title="Update Adobe Flash">Update Flash now &raquo;</a></div>');
+      }
+
+      // simple example, using all default options unless overridden globally
+      $('div.expandable p').expander();
+
+      // *** OR ***
+
+      // override default options (also overrides global overrides)
+      $('div.expandable p').expander({
+        slicePoint:       100,  // default is 100
+        expandPrefix:     '...', // default is '... '
+        expandText:       '[show more]', // default is 'read more'
+        collapseTimer:    5000, // re-collapses after 5 seconds; default is 0, so no re-collapsing
+        userCollapseText: '[^]'  // default is 'read less'
+      });
+
+      // alert modal
+          });
+    </script>
+    <script>
+    $(document).ready(function() {
+      var showChar = 50;
+      var moretext = "more";
+      var lesstext = "less";
+      var ellipsesText = "...";
+      $('.more').each(function() {
+        var content = $(this).html();
+
+        if(content.length > showChar) {
+
+          var c = content.substr(0, showChar);
+          var h = content.substr(showChar-1, content.length - showChar);
+
+          var html = c + '<span class="moreellipses">' + ellipsesText + '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+          $(this).html(html);
+        }
+
+      });
+
+      $(".morelink").click(function(){
+        if($(this).hasClass("less")) {
+          $(this).removeClass("less");
+          $(this).html(moretext);
+        } else {
+          $(this).addClass("less");
+          $(this).html(lesstext);
+        }
+        $(this).parent().prev().toggle();
+        $(this).prev().toggle();
+        return false;
+      });
+
+    });
+    </script>
+
+    <!-- Analytics
+    ================================================== -->
+
+<script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://d1ros97qkrwjf5.cloudfront.net/42/eum/rum.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrf2","beacon-1.newrelic.com","90629d74d8","717264","YwRSMBNZCkAAAU1eDlpOZRYIFxdBF01JUUxHFVEQFEtLQxMNXUICQAhfCk5RClcEGhdHCUQ=",0,42,new Date().getTime()]);</script>
+</body></html>

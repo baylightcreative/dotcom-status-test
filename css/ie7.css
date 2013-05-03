@@ -1,0 +1,35 @@
+.box {
+	border: 1px solid #dadada;
+}
+.span4.sidebar {
+	border-left: 1px solid #dadada;
+	width: 296px;
+	border-right: none;
+	border-top: none;
+	border-bottom: none;
+}
+ul#ehr-status li {
+	float: left!important;
+}
+ul#ehr-status li.LED {
+	width: 49px;
+}
+ul#ehr-status li.h1 {
+	width: 36%;
+	padding-right: 0;
+}
+ul#ehr-status li.ehr-status {
+	width: 45%;
+	padding: 15px 0 0 0;
+}
+div.ribbon {
+	width: 304px;
+	position: absolute;
+	left: 26px;
+}
+.sidebar h3#troubleshoot {
+	margin-top: 80px;
+}
+a.subscribe {
+	font-size: 16px;
+}
